@@ -7,8 +7,7 @@
 def solution(n):
     one = bin(n)[2:].count('1')
     want = 0
-    a = n
     while(want != one):
-        a += 1
-        want = bin(a)[2:].count('1')
-    return a
+        n += 1
+        want = bin(n)[2:].count('1')
+    return n
